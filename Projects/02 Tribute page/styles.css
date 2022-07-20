@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 98vw;
+}
+#main{
+    width: 100%;
+    margin: 30px auto;
+    background-color: rgb(225, 223, 223);
+    border-radius: 5px;
+}
+.header, .bio h2, .bio p{
+    text-align: center;
+}
+#title{
+    padding-top: 30px;
+}
+figure{
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+img{
+    width: 70%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+figcaption{
+    padding: 25px;
+}
+.bio{
+    width: 50%;
+    margin: 0 auto;
+}
+ul li, .bio p{
+    padding-bottom: 25px;
+}
+ul{
+    max-width: 600px;
+    margin: auto;
+}
+span, .bio p{
+    font-weight: bold;
+}
