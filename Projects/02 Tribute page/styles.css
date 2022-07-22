@@ -1,51 +1,72 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body{
-    width: 98vw;
+html{
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
 }
 #main{
-    width: 100%;
-    margin: 30px auto;
-    background-color: rgb(225, 223, 223);
-    border-radius: 5px;
+    width: 98vw;
+    background-color: #eeeeee;
+    margin: 2rem auto;
+    border-radius: .5rem;
+    min-width: 300px
 }
-.header, .bio h2, .bio p{
+.header{
     text-align: center;
+    padding: 4rem 0 2rem;
 }
-#title{
-    padding-top: 30px;
+.header #title{
+    font-size: 2.8rem;
+    padding-bottom: 2.5rem;
 }
-figure{
-    width: 95%;
+p,
+figcaption,
+ul{
+    font-size: 1.6rem;
+}
+#img-div{
     background-color: white;
+    width: 98%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
-img{
-    width: 70%;
-    max-width: 1000px;
+figure{
+    width: 1000px;
+    max-width: 70%;
+}
+#image{
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
     display: block;
 }
 figcaption{
-    padding: 25px;
+    text-align: center;
+    padding: 2rem 0;
 }
 .bio{
-    width: 50%;
+    width: 60rem;
+    max-width: 70%;
     margin: 0 auto;
 }
-ul li, .bio p{
-    padding-bottom: 25px;
+h2{
+    font-size: 2.4rem;
+    padding: 4rem;
+    text-align: center;
 }
-ul{
-    max-width: 600px;
-    margin: auto;
-}
-span, .bio p{
+span, 
+#tribute-info{
     font-weight: bold;
+}
+ul li, 
+#tribute-info{
+    padding-bottom: 2.5rem;
+}
+#tribute-info{
+    text-align: center;
 }
