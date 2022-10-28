@@ -9,7 +9,6 @@ body{
 }
 .main-wrapper{
     background-color: #eeeeee;
-    min-width: 450px;
     min-height: 100vh;
 }
 #header{
@@ -81,6 +80,11 @@ section{
 #How_It_Works{
     width: fit-content;
     margin: 0 auto;
+}
+iframe{
+    max-width: 100%;
+    width: 516;
+    height: 315;
 }
 #Pricing{
     margin: 40px 0 20px;
