@@ -1,0 +1,146 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+}
+nav,
+main{
+    min-width: 300px;
+    max-width: 100vw;
+}
+/*nav bar start*/
+#navbar{
+    background-color: #be3144;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+#navbar ul{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
+#navbar ul li{
+    font-size: large;
+    height: inherit;
+    line-height: 50px;
+    padding: 0 15px;
+    font-weight: bold;
+}
+.nav-link{
+    color: #fff;
+}
+#navbar ul li:active,
+#navbar ul li:hover{
+    background-color: #45567d;
+}
+/*nav bar end*/
+
+/*landing start*/
+.landing-wrapper{
+    min-height: calc(100vh - 5rem);
+    background-color: #2d2e31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.landing-wrapper h1{
+    color: #fff;
+    font-size: 5rem;
+
+}
+.landing-wrapper p{
+    color: #a7303f;
+    font-size: 3rem;
+}
+/*landing end*/
+
+/*project section start*/
+
+.project{
+    min-height: calc(100vh - 5rem);
+    background-color: #45567d;
+    padding: 8rem 0 4rem;
+}
+.project-body-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+.project h1{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+}
+.project-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 20px;
+    margin-top: 5rem;
+}
+.project-wrapper a span{
+    color: #da702e;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.project-wrapper a:hover span{
+    opacity: 1;
+}
+.project-wrapper figure{
+    width: 350px;
+    max-width: 80vw;
+}
+.project-wrapper figure img{
+    width: 100%;
+}
+.project-wrapper figcaption{
+    text-align: center;
+    color: #fff;
+    background-color: #303841;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.showall-wrapper{
+    margin-top: 2rem;
+    text-align: center;
+}
+.codepen{
+    background-color: #323b48;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: all .3s linear;
+    display: inline-block;
+    position: relative;
+}
+.codepen:active,
+.codepen:hover{
+    background-color: #be3144;
+}
+.codepen-span {
+    position: absolute;
+    margin-left: 5px; 
+    transition: all .3s linear;
+}
+.codepen:hover span{
+    transform: translateX(3px)
+}
+/*project section end*/
