@@ -1,5 +1,6 @@
 *{
     list-style: none;
+    list-style-type: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -7,13 +8,16 @@
     font-family: Helvetica, sans-serif;
 
 }
+::selection{
+    color: #be3144;
+}
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 nav,
 main{
     min-width: 300px;
-    max-width: 100vw;
 }
 /*nav bar start*/
 #navbar{
@@ -36,9 +40,12 @@ main{
     line-height: 50px;
     padding: 0 15px;
     font-weight: bold;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
 }
 .nav-link{
     color: #fff;
+    display: inline-block;
+    height: inherit;
 }
 #navbar ul li:active,
 #navbar ul li:hover{
@@ -101,10 +108,12 @@ main{
 }
 .project-wrapper figure{
     width: 350px;
-    max-width: 80vw;
+    max-width: 75vw;
+    background-color: #303841;
 }
 .project-wrapper figure img{
     width: 100%;
+    height: auto;
 }
 .project-wrapper figcaption{
     text-align: center;
@@ -122,10 +131,9 @@ main{
 .codepen{
     background-color: #323b48;
     color: #fff;
-    width: 100px;
-    height: 25px;
+    padding: .5rem 5rem;
     line-height: 25px;
-    font-weight: bold;
+    font-size: 1.5rem;
     border-radius: 2px;
     transition: all .3s linear;
     display: inline-block;
